@@ -1,0 +1,55 @@
+.card {
+	width: clamp(5rem, 20vw, 20rem);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card > figure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.card > figure > img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+/*
+Establecer una:
+medida mínima
+Medida proporcional
+Una medida máxima
+*/
+/*
+
+%	=> Significa el tamaño del elemento padre
+vw	=> Significa el ancho de la pantalla
+vh	=> Significa el alto de la pantalla
+dvw => Significa el ancho dinamico de la pantalla
+dvh => Significa el alto dinamico de la pantalla
+
+*/
+
+.card > p {
+	width: 100%;
+	text-align: left;
+}
+
+.card > button {
+	border: 0;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	font-family: monospace;
+	font-weight: bolder;
+	cursor: pointer;
+	background-color: #11dd11;
+}
+
+.card > button:hover {
+	filter: brightness(1.2);
+}
